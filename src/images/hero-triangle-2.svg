@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1367.7 308.89"><title>hero-triangle-2</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_9" data-name="Livello 9"><polygon points="1367.7 0 0 308.89 1367.7 308.89 1367.7 0"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1367 308" preserveAspectRatio="xMidYMin slice">
+  <g data-name="Livello 2">
+    <path d="M1367.7 0L0 308.89h1367.7V0z" data-name="Livello 9"/>
+  </g>
+</svg>
