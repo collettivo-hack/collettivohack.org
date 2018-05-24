@@ -16,7 +16,7 @@ class Container extends Component {
   };
 
   state = {
-    counterEvents: 3,
+    counterEvents: 1,
   };
 
   onClick = (e) => {
@@ -35,7 +35,7 @@ class Container extends Component {
         <Events counterEvents={this.state.counterEvents} />
         {totalEvents > this.state.counterEvents && (
           <div className="show-all-events">
-            <a href="#" onClick={this.onClick} className="btn extended w-inline-block">
+            <a href="#" onClick={this.onClick} className="btn secondary w-inline-block">
               <div className="btn-wrap">
                 <p className="text-button">Mostra tutti gli eventi</p>
               </div>

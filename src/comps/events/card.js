@@ -42,14 +42,14 @@ const Card = ({ payload, categories, formats }) => (
             <p className="body1 text-weight-600">{payload.title}</p>
           </div>
           <p className="body2 height-72-overflow">{payload.description}</p>
-          <div className="event-category-group mb-lg-16 mt-lg-8">
+          <div className="event-category-group">
             {!!categories[payload.category] && (
               <p className="overline mr-lg-8 text-weight-600">
                 {categories[payload.category].name}
               </p>
             )}
             {!!formats[payload.format] && (
-              <p className="overline mr-lg-8 text-weight-600">{formats[payload.format].name}</p>
+              <p className="overline text-weight-600">{formats[payload.format].name}</p>
             )}
           </div>
           <a

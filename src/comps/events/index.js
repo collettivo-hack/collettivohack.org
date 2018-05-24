@@ -33,23 +33,25 @@ class Events extends Component {
 
     return (
       <div className="event">
-        <div className="card intro">
-          <div className="event-intro">
-            <div className="event-description">
-              <div className="div-block-7">
-                <h2 className="h6 mb-lg-16">Eventi digitali da non perdere</h2>
-                <p className="body1">
-                  Collettivo Hack organizza{' '}
-                  <span className="text-weight-600">
-                    {`eventi, workshop, talk e altro, incentrati sui temi del digitale e
-                    dell'innovazione, nel territorio Ibleo.`}
-                  </span>
-                </p>
+        <div className="card-container">
+          <div className="card">
+            <div className="card-cont intro">
+              <div className="event-description">
+                <div className="div-block-7">
+                  <h2 className="h6 mb-lg-16">Eventi digitali da non perdere</h2>
+                  <p className="body1">
+                    Collettivo Hack organizza{' '}
+                    <span className="text-weight-600">
+                      {`eventi, workshop, talk e altro, incentrati sui temi del digitale e
+                      dell'innovazione, nel territorio Ibleo.`}
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          {events.map(event => <Card key={event.key} payload={event} />)}
         </div>
-        {events.map(event => <Card key={event.key} payload={event} />)}
       </div>
     );
   }
