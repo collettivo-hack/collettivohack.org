@@ -117,7 +117,7 @@ class Container extends Component {
             </div>
             <div className="partecipate-group">
               <div className="partecipate-image">
-                <img title="diventare membro" alt="illustrazione porta" src="img/door.svg" />
+                <img width="132px" height="115px" title="diventare membro" alt="illustrazione porta" src="img/door.svg" />
               </div>
               <div className="partecipate-content">
                 <h2 className="h5">Entra a far parte del Collettivo Hack</h2>
