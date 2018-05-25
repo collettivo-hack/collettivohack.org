@@ -37,7 +37,7 @@ class Container extends Component {
           <div className="show-all-events">
             <a href="#" onClick={this.onClick} className="btn secondary w-inline-block">
               <div className="btn-wrap">
-                <p className="text-button">Mostra tutti gli eventi</p>
+                <p className="text-button">Mostra altri eventi</p>
               </div>
             </a>
           </div>
