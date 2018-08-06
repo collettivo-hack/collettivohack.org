@@ -11,7 +11,7 @@ export default () => (
               La nostra community è aperta a tutti!<br />&zwj;<br />&zwj;
             </em>
             Per guidare al meglio la partecipazione riteniamo opportuno che
-            <span className="text-weight-600">TUTTI</span>
+            <span className="text-weight-600">TUTTI</span>{' '}
             i membri, organizzatori, sponsor, speakers e ospiti,
             <span className="text-weight-600">
               dovranno comportarsi in linea al presente codice di condotta.
