@@ -35,11 +35,14 @@ class Container extends Component {
         <Events counterEvents={this.state.counterEvents} />
         {totalEvents > this.state.counterEvents && (
           <div className="show-all-events">
-            <a href="#" onClick={this.onClick} className="btn secondary w-inline-block">
+            <button
+              onClick={this.onClick}
+              className="btn secondary w-inline-block"
+            >
               <div className="btn-wrap">
                 <p className="text-button">Mostra altri eventi</p>
               </div>
-            </a>
+            </button>
           </div>
         )}
         <div className="about">
@@ -51,20 +54,25 @@ class Container extends Component {
                 Hack`}
                 </h2>
                 <p className="body1 text-white">
-                  La nuova <span className="text-italic">digital community</span> siciliana<br />
-                  <br />Il Collettivo Hack è un insieme di persone: professionisti, curiosi,
-                  giovani, imprenditori, appassionati che hanno{' '}
+                  La nuova{' '}
+                  <span className="text-italic">digital community</span>{' '}
+                  siciliana<br />
+                  <br />Il Collettivo Hack è un insieme di persone:
+                  professionisti, curiosi, giovani, imprenditori, appassionati
+                  che hanno{' '}
                   <span className="text-weight-600">
                     un interesse comune per il mondo digitale
                   </span>{' '}
-                  e che si ritrovano periodicamente off line, ma sempre unite nell’online.<br />
-                  <br />E’ un network dove relazioni, scambi e condivisioni avvengono attraverso un
-                  pensiero e una “mentalità pirata”, cioè di continua{' '}
-                  <strong>esplorazione e approfondimento </strong>( da qui hacking e la nostra
-                  estrapolazione del nome HACK),{' '}
+                  e che si ritrovano periodicamente off line, ma sempre unite
+                  nell’online.<br />
+                  <br />E’ un network dove relazioni, scambi e condivisioni
+                  avvengono attraverso un pensiero e una “mentalità pirata”,
+                  cioè di continua{' '}
+                  <strong>esplorazione e approfondimento </strong>( da qui
+                  hacking e la nostra estrapolazione del nome HACK),{' '}
                   <span className="text-weight-600">
-                    per sviluppare un apprendimento e una conoscenza più ampia delle tecnologie
-                    digitali.
+                    per sviluppare un apprendimento e una conoscenza più ampia
+                    delle tecnologie digitali.
                   </span>
                 </p>
               </div>
@@ -79,10 +87,13 @@ class Container extends Component {
             </div>
             <div className="about-content reverse">
               <div className="about-description">
-                <h3 className="h5 text-white mb-lg40">Come nasce il Colletivo Hack</h3>
+                <h3 className="h5 text-white mb-lg40">
+                  Come nasce il Colletivo Hack
+                </h3>
                 <p className="body1 text-white">
-                  Nasce dall’interazione diretta di professionisti web, con diverse competenze e
-                  passioni, unite fondamentalmente dalla volontà di{' '}
+                  Nasce dall’interazione diretta di professionisti web, con
+                  diverse competenze e passioni, unite fondamentalmente dalla
+                  volontà di{' '}
                   <span className="text-weight-600">
                     {`promuovere, incentivare e
                   rafforzare la cultura digitale, nel territorio ibleo.`}
@@ -92,14 +103,15 @@ class Container extends Component {
                   <em>“Sentivamo il bisogno di porre in particolar modo l’</em>
                   <span>
                     <em className="text-weight-600">
-                      attenzione sull’impatto della trasformazione e innovazione digitale nel nostro
-                      territorio ibleo
+                      attenzione sull’impatto della trasformazione e innovazione
+                      digitale nel nostro territorio ibleo
                     </em>
                   </span>
                   <em>
                     {' '}
-                    e soprattutto condividere visioni quotidiane e lavorative con chiunque
-                    interessato a conoscere e apprezzare questo mondo.”
+                    e soprattutto condividere visioni quotidiane e lavorative
+                    con chiunque interessato a conoscere e apprezzare questo
+                    mondo.”
                   </em>
                   <br />
                   <br />
@@ -117,7 +129,13 @@ class Container extends Component {
             </div>
             <div className="partecipate-group">
               <div className="partecipate-image">
-                <img width="132px" height="115px" title="diventare membro" alt="illustrazione porta" src="img/door.svg" />
+                <img
+                  width="132px"
+                  height="115px"
+                  title="diventare membro"
+                  alt="illustrazione porta"
+                  src="img/door.svg"
+                />
               </div>
               <div className="partecipate-content">
                 <h2 className="h5">Entra a far parte del Collettivo Hack</h2>
@@ -134,8 +152,8 @@ class Container extends Component {
                     <p className="body1">
                       <span className="text-weight-600">
                         Diventare a tutti gli effetti membro della community{' '}
-                      </span>per proporre temi di discussione, fare lo speaker, organizzare
-                      incontri, eventi, presentazioni e tanto altro.
+                      </span>per proporre temi di discussione, fare lo speaker,
+                      organizzare incontri, eventi, presentazioni e tanto altro.
                     </p>
                   </li>
                   <li className="list-item">
@@ -145,19 +163,28 @@ class Container extends Component {
                       </span>
                     </p>
                     <p className="body1">
-                      <span className="text-weight-600">Partecipare ad incontri e iniziative</span>{' '}
+                      <span className="text-weight-600">
+                        Partecipare ad incontri e iniziative
+                      </span>{' '}
                       organizzate da noi.
                     </p>
                   </li>
                   <li className="list-item">
-                    <span className="body1 mr-lg-16 mr-sm-0 mb-sm-16" role="img" aria-label="cuore">
+                    <span
+                      className="body1 mr-lg-16 mr-sm-0 mb-sm-16"
+                      role="img"
+                      aria-label="cuore"
+                    >
                       ❤️
                     </span>
                     <p className="body1">
-                      <span className="text-weight-600">Fare una donazione.</span> Se il tuo
-                      contributo non può essere di tipo operativo ma condividi le finalità del
-                      Collettivo Hack, puoi comunque contribuire economicamente al sostegno dei
-                      costi di gestione e realizzazione degli eventi.
+                      <span className="text-weight-600">
+                        Fare una donazione.
+                      </span>{' '}
+                      Se il tuo contributo non può essere di tipo operativo ma
+                      condividi le finalità del Collettivo Hack, puoi comunque
+                      contribuire economicamente al sostegno dei costi di
+                      gestione e realizzazione degli eventi.
                     </p>
                   </li>
                 </ul>

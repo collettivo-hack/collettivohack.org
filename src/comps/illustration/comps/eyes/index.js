@@ -3,7 +3,7 @@ import Animation from './animation';
 
 export default () => (
   <g id="Occhi">
-    <Animation rotate>
+    <Animation rotate="yes">
       <circle
         id="eyedark3"
         cx="939.6"
@@ -39,7 +39,7 @@ export default () => (
         strokeWidth="4"
       />
     </Animation>
-    <Animation delay="2500" rotate>
+    <Animation delay="2500" rotate="yes">
       <g id="eyelight">
         <circle cx="1242.8" cy="45.2" r="11" fill="#fff" />
         <path

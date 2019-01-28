@@ -1,85 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
 
 const propTypes = {
   delay: PropTypes.string,
   reverse: PropTypes.bool,
   transform: PropTypes.string,
 };
-
-function animationBird() {
-  return keyframes` /* stylelint-disable-line */
-  0%{transform: rotate(0deg);}
-  30%{transform: rotate(15deg);}
-  70%{transform: rotate(-15deg);}
-  100%{transform: rotate(0deg);}
-`;
-}
-
-function animationRight() {
-  return keyframes` /* stylelint-disable-line */
-  0%{transform: rotate(0deg);}
-  20%{transform: rotate(-30deg);}
-  40%{transform: rotate(0deg);}
-  54%{transform: rotate(-25deg);}
-  70%{transform: rotate(0deg);}
-  85.33%{transform: rotate(-7.97deg);}
-  100%{transform: rotate(0deg);}
-`;
-}
-
-function animationLeft() {
-  return keyframes` /* stylelint-disable-line */
-  0%{transform: rotate(0deg);}
-  20%{transform: rotate(30deg);}
-  40%{transform: rotate(0deg);}
-  54%{transform: rotate(25deg);}
-  70%{transform: rotate(0deg);}
-  85.33%{transform: rotate(7.97deg);}
-  100%{transform: rotate(0deg);}
-`;
-}
-
-const Wrapper = styled.g`
-  animation-name: ${animationBird};
-  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-delay: ${({ delay }) => delay || 0}ms;
-  animation-duration: 5s;
-  -webkit-backface-visibility: hidden;
-  transform-origin: 50% 50%;
-  transform-box: fill-box;
-  transform: rotate(0deg);
-`;
-
-const Right = styled.g`
-  animation-name: ${animationRight};
-  animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-delay: ${({ delay }) => delay || 0}ms;
-  animation-duration: 5s;
-  -webkit-backface-visibility: hidden;
-  transform-origin: 100% 100%;
-  transform-box: fill-box;
-  transform: rotate(0deg);
-`;
-
-const Left = styled.g`
-  animation-name: ${animationLeft};
-  animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-delay: ${({ delay }) => delay || 0}ms;
-  animation-duration: 5s;
-  -webkit-backface-visibility: hidden;
-  transform-origin: 0% 100%;
-  transform-box: fill-box;
-  transform: rotate(0deg);
-`;
-
 const Animation = ({ transform, delay, reverse }) => (
   <g delay={delay} reverse={reverse}>
     <g
